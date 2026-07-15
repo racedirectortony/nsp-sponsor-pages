@@ -216,6 +216,9 @@
   .fld textarea{resize:vertical;min-height:84px}
   .fld select{appearance:none;-webkit-appearance:none;color:var(--ink)}
   .fld select option{background:#101a3d;color:#fff}
+  .fld-check{flex-direction:row;align-items:flex-start;gap:10px;cursor:pointer}
+  .fld-check input{width:16px;height:16px;flex:0 0 auto;margin:2px 0 0;padding:0;background:transparent;border:0;border-radius:0;accent-color:var(--magenta);box-shadow:none}
+  .fld-check span{font-family:var(--font-body);font-weight:400;font-size:13px;line-height:1.4;color:var(--ink);letter-spacing:0;text-transform:none}
   .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
   .formfoot{display:flex;align-items:center;gap:16px;margin-top:16px;flex-wrap:wrap}
   .submitbtn{cursor:pointer;font-size:12px;padding:12px 24px}
@@ -284,10 +287,21 @@
   }
 
   @media (max-width:720px){
-    .facts,.features,.roles,.alacarte,.recap,.flagship .body2{grid-template-columns:1fr}
+    .wrap{padding:0 16px}
+    .facts,.features,.alacarte,.recap,.flagship .body2,.allyear,.fgrid{grid-template-columns:1fr}
     .demo{grid-template-columns:repeat(3,1fr)}
     .matrix{font-size:10.5px}
-    .hero .logo{max-width:90%}
+    /* sticky header: keep it short + single-row nav so it floats cleanly */
+    .sitehead .hin{padding:9px 16px}
+    .hlogo{height:34px}
+    .htag{display:none}
+    .hactions .btn{display:none}
+    .hurl{font-size:11px}
+    .jump{flex-wrap:nowrap;overflow-x:auto;gap:2px;margin-top:8px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    .jump::-webkit-scrollbar{display:none}
+    .jump a{padding:6px 8px;font-size:10px}
+    .sitehead.shrunk .hlogo{height:26px}
+    .herotitle{font-size:32px}
   }
 </style>
 </head>
@@ -478,6 +492,10 @@
                 <option>NSP Annual Partner (all three events)</option>
               </select>
             </label>
+            <label class="fld fld-wide fld-check">
+              <input type="checkbox" name="krbe_interest" value="yes">
+              <span>Yes, I'm also interested in additional marketing opportunities through our media partner, 104.1 KRBE.</span>
+            </label>
             <label class="fld fld-wide"><span>Your goals, questions, or budget</span><textarea name="message" rows="4" placeholder="Share your goals, any budget you have in mind, and any questions."></textarea></label>
           </div>
           <input type="text" name="company_fax" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -544,7 +562,8 @@
         first_name: inq.first_name.value.trim(), last_name: inq.last_name.value.trim(),
         organization: inq.organization.value.trim(),
         email: inq.email.value.trim(), phone: inq.phone.value.trim(), website: inq.website.value.trim(),
-        category: inq.category.value.trim(), interest: inq.interest.value, message: inq.message.value.trim(),
+        category: inq.category.value.trim(), interest: inq.interest.value,
+        krbe_interest: inq.krbe_interest.checked, message: inq.message.value.trim(),
         event: 'Houston Resolution Run', source: 'sponsorship'
       };
       if(!data.first_name || !data.last_name || !data.organization || data.email.indexOf('@')<1){ err.hidden=false; return; }
