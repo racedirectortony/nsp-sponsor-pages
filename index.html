@@ -1,10 +1,500 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
-<title>NSP Sponsorship</title>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="0; url=/houston-resolution-run">
-<link rel="canonical" href="/houston-resolution-run">
-<style>body{margin:0;height:100vh;display:flex;align-items:center;justify-content:center;background:#0c1330;color:#fff;font-family:system-ui,-apple-system,sans-serif}a{color:#ffc247}</style>
-</head><body>
-<p>Redirecting to <a href="/houston-resolution-run">sponsorship details</a>...</p>
-</body></html>
+<title>Sponsor Negative Split Productions — Houston Endurance Events</title>
+<meta name="description" content="Sponsor Houston's favorite endurance events. Negative Split Productions owns and produces the Houston Resolution Run, Houston Kids Tri, and Houston Fourth Fest, start to finish. Reach thousands of active, loyal, local people.">
+<link rel="icon" href="assets/logos/nsp-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sponsor the finish line — Negative Split Productions">
+<meta property="og:description" content="Put your brand in front of thousands of active, loyal, local Houston people across a full season of endurance events.">
+<meta property="og:image" content="https://sponsor.mynegativesplit.com/assets/photos/hero-aerial.jpg">
+<meta property="og:url" content="https://sponsor.mynegativesplit.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================
+     NSP DESIGN TOKENS (inlined from the NSP design system)
+     ============================================================ */
+  :root{
+    /* brand core */
+    --nsp-blue:#2080bb; --nsp-blue-bright:#38a1e0; --nsp-green:#a0ce4e;
+    --blue-50:#eaf4fb; --blue-100:#cbe4f5; --blue-500:#2080bb; --blue-600:#1b6c9e; --blue-700:#165780;
+    --green-600:#86b338; --green-700:#6a8f2c;
+    /* darks / neutrals */
+    --dark-gray:#3e3e3e; --charcoal:#313539; --deep-charcoal:#292c30; --near-black:#24292d;
+    --gray-0:#ffffff; --gray-25:#fafbfc; --gray-50:#f4f6f8; --gray-100:#e9edf1; --gray-200:#d7dde3;
+    --gray-300:#b9c2cb; --gray-400:#8b96a0; --gray-500:#626d77;
+    /* surfaces + text */
+    --surface-page:var(--gray-25); --near-black-bg:#24292d;
+    --text-strong:var(--near-black); --text-body:var(--dark-gray); --text-muted:var(--gray-500);
+    --text-subtle:var(--gray-400); --text-on-dark-muted:rgba(255,255,255,0.66);
+    --text-link:var(--nsp-blue); --text-link-hover:var(--blue-700);
+    /* borders */
+    --border-subtle:var(--gray-100); --border-default:var(--gray-200); --border-on-dark:rgba(255,255,255,0.14);
+    --focus-ring:rgba(32,128,187,0.45);
+    /* type */
+    --font-sans:'Inter','Helvetica Neue',Helvetica,Arial,system-ui,sans-serif;
+    --font-display:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;
+    --font-mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
+    --num-tabular:'tnum' 1,'cv01' 1;
+    --text-2xs:0.6875rem; --text-xs:0.75rem; --text-sm:0.875rem; --text-md:1rem; --text-lg:1.125rem;
+    --text-xl:1.375rem; --text-2xl:1.75rem; --text-3xl:2.25rem; --text-4xl:3rem; --text-5xl:3.75rem; --text-6xl:4.75rem;
+    --fw-regular:400; --fw-medium:500; --fw-semibold:600; --fw-bold:700; --fw-extrabold:800; --fw-black:900;
+    --lh-tight:1.05; --lh-snug:1.2; --lh-heading:1.15; --lh-body:1.6;
+    --ls-tighter:-0.03em; --ls-tight:-0.015em; --ls-wide:0.04em; --ls-wider:0.09em;
+    --heading-1:var(--fw-bold) var(--text-4xl)/var(--lh-heading) var(--font-display);
+    --display-1:var(--fw-extrabold) var(--text-5xl)/var(--lh-tight) var(--font-display);
+    --body-lg:var(--fw-regular) var(--text-lg)/var(--lh-body) var(--font-sans);
+    --body-md:var(--fw-regular) var(--text-md)/var(--lh-body) var(--font-sans);
+    --body-sm:var(--fw-regular) var(--text-sm)/var(--lh-body) var(--font-sans);
+    --label-md:var(--fw-semibold) var(--text-sm)/1.3 var(--font-sans);
+    /* spacing */
+    --space-2:0.5rem; --space-3:0.75rem; --space-4:1rem; --space-6:1.5rem; --space-8:2rem;
+    --container-md:860px; --container-xl:1280px;
+    --control-h-sm:34px; --control-h-md:42px; --control-h-lg:52px;
+    /* radii + shadow */
+    --radius-md:10px; --radius-lg:14px; --radius-xl:20px; --radius-2xl:28px; --radius-pill:999px;
+    --shadow-xs:0 1px 2px rgba(36,41,45,0.06);
+    --shadow-sm:0 1px 3px rgba(36,41,45,0.08),0 1px 2px rgba(36,41,45,0.06);
+    --shadow-lg:0 12px 28px rgba(36,41,45,0.12),0 4px 8px rgba(36,41,45,0.06);
+    --shadow-brand:0 10px 26px rgba(32,128,187,0.30);
+    --shadow-focus:0 0 0 3px var(--focus-ring);
+    --edge-highlight:inset 0 1px 0 rgba(255,255,255,0.75);
+    --edge-highlight-dark:inset 0 1px 0 rgba(255,255,255,0.16);
+    /* motion */
+    --ease-out:cubic-bezier(0.22,1,0.36,1); --dur-fast:120ms; --dur-base:200ms;
+    /* glass + frost */
+    --glass-filter:blur(20px) saturate(180%); --glass-filter-lg:blur(40px) saturate(200%);
+    --glass-fill-dark:rgba(22,28,34,0.42); --glass-fill-dark-strong:rgba(18,23,28,0.62);
+    --glass-stroke-dark:rgba(255,255,255,0.20);
+    --glass-edge:inset 0 1px 0 rgba(255,255,255,0.65),inset 0 -1px 1px rgba(255,255,255,0.12),0 10px 30px rgba(20,26,32,0.22);
+    --glass-edge-dark:inset 0 1px 0 rgba(255,255,255,0.28),inset 0 -1px 1px rgba(0,0,0,0.25),0 14px 40px rgba(0,0,0,0.40);
+    --frost-filter:blur(12px) saturate(165%);
+    --frost-fill:rgba(255,255,255,0.72); --frost-fill-strong:rgba(255,255,255,0.85); --frost-fill-sunken:rgba(244,246,248,0.7);
+    --frost-stroke-ink:rgba(36,41,45,0.10);
+    --streaks:repeating-linear-gradient(115deg,rgba(255,255,255,0.04) 0 2px,transparent 2px 26px);
+    /* event gradients (exact per events.css) */
+    --grad-resrun:linear-gradient(90deg,#45b0e4 0%,#67a7dc 42%,#e74298 100%);
+    --grad-kidstri:linear-gradient(90deg,#26ace2 0%,#00aeef 55%,#eb1d24 100%);
+    --grad-fourthfest:linear-gradient(90deg,#e02020 0%,#000060 55%,#0080f0 100%);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--font-sans);color:var(--text-body);background:var(--surface-page);line-height:var(--lh-body);-webkit-font-smoothing:antialiased;overflow-x:clip}
+  a{color:var(--text-link);text-decoration:none}
+  a:hover{color:var(--text-link-hover)}
+  img{display:block}
+
+  /* ---------- buttons ---------- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-sans);font-weight:var(--fw-semibold);letter-spacing:-0.005em;border-radius:var(--radius-md);cursor:pointer;white-space:nowrap;user-select:none;text-decoration:none;border:1px solid transparent;transition:background var(--dur-fast) var(--ease-out),transform var(--dur-fast) var(--ease-out),box-shadow var(--dur-base) var(--ease-out)}
+  .btn:active{transform:translateY(1px)}
+  .btn-sm{height:var(--control-h-sm);padding:0 14px;font-size:13px;gap:7px}
+  .btn-md{height:var(--control-h-md);padding:0 20px;font-size:15px;gap:8px}
+  .btn-lg{height:var(--control-h-lg);padding:0 28px;font-size:16px;gap:10px}
+  .btn-primary{background:var(--nsp-blue);color:#fff;border-color:var(--nsp-blue);box-shadow:var(--edge-highlight),var(--shadow-brand)}
+  .btn-primary:hover{background:var(--blue-600);color:#fff;box-shadow:var(--edge-highlight),var(--shadow-lg)}
+  .btn-primary:active{background:var(--blue-700)}
+  .btn-secondary{background:var(--frost-fill);color:var(--text-strong);border-color:var(--frost-stroke-ink);box-shadow:var(--edge-highlight),var(--shadow-xs);backdrop-filter:var(--frost-filter);-webkit-backdrop-filter:var(--frost-filter)}
+  .btn-secondary:hover{background:var(--frost-fill-strong);color:var(--text-strong)}
+  .btn-glass-dark{background:var(--glass-fill-dark);color:#fff;border-color:var(--glass-stroke-dark);box-shadow:var(--glass-edge-dark);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter)}
+  .btn-glass-dark:hover{background:var(--glass-fill-dark-strong);color:#fff}
+  .btn-block{display:flex;width:100%}
+
+  /* ---------- eyebrow ---------- */
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font:var(--fw-bold) var(--text-xs)/1 var(--font-sans);letter-spacing:var(--ls-wider);text-transform:uppercase;color:var(--nsp-blue)}
+  .eyebrow.on-dark{color:rgba(255,255,255,0.7)}
+  .eyebrow.line::before{content:"";width:24px;height:2px;background:currentColor;border-radius:2px}
+
+  /* ---------- header ---------- */
+  header.site{background:#fff;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-bottom:1px solid var(--border-subtle);position:sticky;top:0;z-index:20}
+  .brand{display:flex;align-items:center;gap:14px}
+  .brand img{height:38px;transition:height var(--dur-base) var(--ease-out)}
+  header.site.shrunk .brand img{height:28px}
+  .brand .lbl{font:var(--fw-bold) var(--text-sm)/1 var(--font-sans);letter-spacing:var(--ls-wider);text-transform:uppercase;color:var(--nsp-blue);padding-left:14px;border-left:1px solid var(--border-default)}
+  nav.site{display:flex;align-items:center;gap:32px}
+  nav.site a.navlink{font:var(--fw-semibold) var(--text-sm)/1 var(--font-sans);letter-spacing:var(--ls-wide);text-transform:uppercase;color:var(--text-body)}
+  nav.site a.navlink:hover{color:var(--nsp-blue)}
+  nav.site a.siteurl{font-family:var(--font-mono);font-weight:var(--fw-bold);font-size:var(--text-xs);letter-spacing:0;text-transform:none;color:var(--nsp-blue)}
+  nav.site a.siteurl:hover{color:var(--blue-700)}
+  .menubtn{display:none;flex-direction:column;justify-content:center;gap:5px;width:42px;height:38px;padding:0 9px;background:var(--gray-50);border:1px solid var(--border-default);border-radius:9px;cursor:pointer}
+  .menubtn span{display:block;height:2px;width:100%;background:var(--near-black);border-radius:2px}
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;min-height:680px;display:flex;align-items:center;overflow:hidden;background:var(--near-black)}
+  .hero-stage{--loop:31s;position:absolute;inset:0;overflow:hidden}
+  @keyframes heroA{0%{opacity:0;transform:scale(1.05)}1.6%{opacity:1}9%{opacity:1;transform:scale(1.14)}10.8%{opacity:0;transform:scale(1.15)}100%{opacity:0;transform:scale(1.15)}}
+  @keyframes heroB{0%{opacity:0;transform:scale(1.16) translateX(0)}1.6%{opacity:1}9%{opacity:1;transform:scale(1.06) translateX(-1.6%)}10.8%{opacity:0;transform:scale(1.05) translateX(-1.9%)}100%{opacity:0;transform:scale(1.05) translateX(-1.9%)}}
+  .kb{position:absolute;inset:0;background-size:cover;background-repeat:no-repeat;opacity:0;will-change:opacity,transform;transform-origin:center;animation-duration:var(--loop);animation-timing-function:linear;animation-iteration-count:infinite;animation-fill-mode:both}
+  .kb-a{animation-name:heroA}
+  .kb-b{animation-name:heroB}
+  .kb:nth-child(1){animation-delay:calc(var(--loop)/12*0)}
+  .kb:nth-child(2){animation-delay:calc(var(--loop)/12*1)}
+  .kb:nth-child(3){animation-delay:calc(var(--loop)/12*2)}
+  .kb:nth-child(4){animation-delay:calc(var(--loop)/12*3)}
+  .kb:nth-child(5){animation-delay:calc(var(--loop)/12*4)}
+  .kb:nth-child(6){animation-delay:calc(var(--loop)/12*5)}
+  .kb:nth-child(7){animation-delay:calc(var(--loop)/12*6)}
+  .kb:nth-child(8){animation-delay:calc(var(--loop)/12*7)}
+  .kb:nth-child(9){animation-delay:calc(var(--loop)/12*8)}
+  .kb:nth-child(10){animation-delay:calc(var(--loop)/12*9)}
+  .kb:nth-child(11){animation-delay:calc(var(--loop)/12*10)}
+  .kb:nth-child(12){animation-delay:calc(var(--loop)/12*11)}
+  @media (prefers-reduced-motion:reduce){.kb{animation:none;opacity:0}.kb:nth-child(1){opacity:1}}
+  .hero-scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,8,12,0.74) 0%,rgba(6,8,12,0.34) 55%,rgba(6,8,12,0.5) 100%)}
+  .hero-inner{position:relative;max-width:var(--container-xl);margin:0 auto;padding:64px 48px;width:100%}
+  .hero-card{max-width:580px;padding:44px;border-radius:var(--radius-2xl);box-shadow:var(--glass-edge);background:var(--glass-fill-dark-strong);backdrop-filter:var(--glass-filter-lg);-webkit-backdrop-filter:var(--glass-filter-lg);border:1px solid rgba(255,255,255,0.2)}
+  .hero-card h1{font:var(--fw-black) var(--text-6xl)/0.94 var(--font-display);letter-spacing:var(--ls-tighter);color:#fff;margin:0}
+  .hero-card p{font:var(--body-lg);color:rgba(255,255,255,0.85);margin:20px 0 0;text-wrap:pretty}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+
+  /* ---------- reach bar ---------- */
+  .reachbar{background:var(--charcoal)}
+  .reachbar .in{max-width:var(--container-xl);margin:0 auto;padding:40px 48px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-bottom:1px solid var(--border-on-dark)}
+  .reachbar .stat{padding:0 28px;border-right:1px solid rgba(255,255,255,0.1)}
+  .reachbar .stat:last-child{border-right:0}
+  .reachbar .v{font-family:var(--font-mono);font-weight:800;font-size:var(--text-4xl);color:#fff;font-feature-settings:var(--num-tabular);line-height:1}
+  .reachbar .l{font:var(--fw-semibold) var(--text-2xs)/1.2 var(--font-sans);letter-spacing:var(--ls-wide);text-transform:uppercase;color:rgba(255,255,255,0.6);margin-top:8px}
+
+  /* ---------- audience ---------- */
+  .audience{background:var(--surface-page);padding:88px 48px}
+  .audience .in{max-width:var(--container-xl);margin:0 auto;display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center}
+  .audience h2{font:var(--heading-1);color:var(--text-strong);letter-spacing:var(--ls-tight);margin:14px 0 0}
+  .audience p{font:var(--body-md);color:var(--text-muted);margin:16px 0 0;max-width:420px}
+  .statgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .statcard{background:var(--frost-fill-strong);backdrop-filter:var(--frost-filter);-webkit-backdrop-filter:var(--frost-filter);border:1px solid var(--frost-stroke-ink);border-radius:var(--radius-lg);padding:var(--space-6);box-shadow:var(--edge-highlight),var(--shadow-sm)}
+  .statcard .sc-top{display:flex;align-items:baseline;gap:6px}
+  .statcard .sc-val{font-family:var(--font-mono);font-weight:700;font-size:var(--text-4xl);line-height:1;letter-spacing:-0.02em;color:var(--nsp-blue);font-feature-settings:var(--num-tabular)}
+  .statcard .sc-unit{font-family:var(--font-mono);font-size:var(--text-lg);color:var(--text-muted)}
+  .statcard .sc-bot{margin-top:8px;display:flex;align-items:center;gap:8px}
+  .statcard .sc-label{font:var(--label-md);color:var(--text-muted);text-transform:uppercase;letter-spacing:var(--ls-wide);font-size:var(--text-xs)}
+  .statcard .sc-trend{font-family:var(--font-mono);font-size:var(--text-xs);font-weight:600;color:var(--nsp-blue)}
+
+  /* ---------- event lineup ---------- */
+  .lineup{background:var(--near-black);padding:80px 0 0}
+  .lineup .head{max-width:var(--container-xl);margin:0 auto;padding:0 48px 44px}
+  .lineup h2{font:var(--heading-1);color:#fff;letter-spacing:var(--ls-tight);margin:12px 0 0;max-width:720px}
+  .band{position:relative;min-height:460px;display:flex;align-items:center;overflow:hidden}
+  .band .photo{position:absolute;inset:0;background-size:cover;background-repeat:no-repeat}
+  .band .scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,8,12,0.88) 0%,rgba(6,8,12,0.58) 46%,rgba(6,8,12,0.14) 100%)}
+  .band .topbar{position:absolute;top:0;left:0;right:0;height:5px}
+  .band .in{position:relative;max-width:var(--container-xl);margin:0 auto;padding:58px 48px;width:100%}
+  .band .col{max-width:600px}
+  .band h3{font:var(--fw-black) var(--text-6xl)/0.92 var(--font-display);letter-spacing:var(--ls-tighter);margin:0;-webkit-background-clip:text;background-clip:text;color:transparent}
+  .band .tag{font:var(--body-lg);color:rgba(255,255,255,0.84);margin:16px 0 0;max-width:480px;text-wrap:pretty}
+  .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+  .chip{padding:8px 15px;border-radius:var(--radius-pill);background:var(--glass-fill-dark);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);border:1px solid rgba(255,255,255,0.18)}
+  .chip span{font:var(--fw-semibold) var(--text-sm)/1 var(--font-sans);color:#fff}
+  .bandstats{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+  .bandstat{min-width:130px;padding:15px 20px;border-radius:var(--radius-lg);background:var(--glass-fill-dark);backdrop-filter:var(--glass-filter);-webkit-backdrop-filter:var(--glass-filter);border:1px solid rgba(255,255,255,0.16)}
+  .bandstat .v{font-family:var(--font-mono);font-weight:700;font-size:var(--text-3xl);color:#fff;font-feature-settings:var(--num-tabular);line-height:1}
+  .bandstat .l{font:var(--fw-semibold) var(--text-2xs)/1 var(--font-sans);letter-spacing:var(--ls-wide);text-transform:uppercase;color:rgba(255,255,255,0.64);margin-top:7px}
+  .bandbtn{display:inline-flex;align-items:center;gap:10px;margin-top:28px;padding:0 26px;height:52px;border-radius:var(--radius-pill);font:var(--fw-bold) var(--text-sm)/1 var(--font-sans);letter-spacing:var(--ls-wide);text-transform:uppercase;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,0.28);box-shadow:var(--edge-highlight),var(--shadow-lg);transition:transform var(--dur-base) var(--ease-out),box-shadow var(--dur-base) var(--ease-out)}
+  .bandbtn:hover{color:#fff;transform:translateY(-2px);box-shadow:var(--edge-highlight),0 18px 38px rgba(0,0,0,0.42)}
+  .bandbtn .arw{transition:transform var(--dur-base) var(--ease-out)}
+  .bandbtn:hover .arw{transform:translateX(4px)}
+
+  /* ---------- contact ---------- */
+  .contact{position:relative;background:var(--nsp-blue);padding:88px 48px;overflow:hidden}
+  .contact .streaks{position:absolute;inset:0;background-image:var(--streaks)}
+  .contact .head{position:relative;max-width:var(--container-md);margin:0 auto;text-align:center}
+  .contact h2{font:var(--display-1);color:#fff;letter-spacing:var(--ls-tighter);margin:14px 0 0}
+  .contact .sub{font:var(--body-lg);color:rgba(255,255,255,0.9);margin:16px auto 0;max-width:520px}
+  .contact .sub a{color:#fff;text-decoration:underline}
+  .formcard{position:relative;max-width:680px;margin:36px auto 0;padding:32px;border-radius:var(--radius-xl);background:#fff;box-shadow:var(--shadow-lg)}
+  .fgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .fld{display:flex;flex-direction:column;gap:6px}
+  .fld.wide{grid-column:1 / -1}
+  .fld > span{font:var(--label-md);color:var(--text-strong)}
+  .fld input,.fld select,.fld textarea{font-family:var(--font-sans);font-size:var(--text-md);color:var(--text-strong);background:var(--frost-fill);border:1px solid var(--border-default);border-radius:var(--radius-md);padding:0 14px;height:var(--control-h-md);width:100%;outline:none;box-shadow:var(--edge-highlight);transition:border-color var(--dur-fast) var(--ease-out),box-shadow var(--dur-fast) var(--ease-out)}
+  .fld textarea{height:auto;min-height:96px;padding:11px 14px;resize:vertical;line-height:1.5}
+  .fld input::placeholder,.fld textarea::placeholder{color:var(--text-subtle)}
+  .fld input:focus,.fld select:focus,.fld textarea:focus{border-color:var(--nsp-blue);box-shadow:var(--shadow-focus)}
+  .fld select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23626d77' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+  .fld-check{flex-direction:row;align-items:flex-start;gap:10px;cursor:pointer}
+  .fld-check input{width:17px;height:17px;flex:0 0 auto;margin:2px 0 0;padding:0;height:17px;background:transparent;box-shadow:none;accent-color:var(--nsp-blue)}
+  .fld-check span{font:var(--body-sm);color:var(--text-body)}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+  .formfoot{display:flex;align-items:center;gap:16px;margin-top:20px;flex-wrap:wrap}
+  .formnote{font:var(--body-sm);color:var(--text-muted)}
+  .formmsg{margin-top:16px;padding:13px 16px;border-radius:var(--radius-md);font-size:var(--text-sm)}
+  .formmsg a{color:inherit;font-weight:600}
+  .formmsg.ok{background:rgba(160,206,78,0.14);border:1px solid rgba(160,206,78,0.45);color:#4a6a1f}
+  .formmsg.err{background:rgba(214,69,69,0.10);border:1px solid rgba(214,69,69,0.4);color:#8f2a2a}
+  .submitbtn:disabled{opacity:.6;cursor:default}
+
+  /* ---------- footer ---------- */
+  footer.site{background:var(--near-black);color:var(--text-on-dark-muted);text-align:center;padding:36px;font:var(--body-sm)}
+  footer.site img{height:44px;margin:0 auto 16px}
+  footer.site a{color:rgba(255,255,255,0.8);text-decoration:underline}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:900px){
+    .audience .in{grid-template-columns:1fr;gap:36px}
+    .band h3{font-size:var(--text-5xl)}
+  }
+  @media (max-width:720px){
+    header.site{padding:16px 20px}
+    nav.site{gap:0}
+    nav.site a.navlink,nav.site .btn{display:none}
+    .menubtn{display:flex}
+    header.site.menu-open{flex-wrap:wrap}
+    header.site.menu-open nav.site{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%;margin-top:14px}
+    header.site.menu-open nav.site a.navlink{display:block;padding:10px 2px;font-size:15px}
+    header.site.menu-open nav.site .btn{display:inline-flex;margin-top:6px}
+    .hero{min-height:600px}
+    .hero-inner{padding:44px 20px}
+    .hero-card{padding:30px 24px}
+    .hero-card h1{font-size:var(--text-4xl)}
+    .reachbar .in{grid-template-columns:1fr 1fr;gap:24px 0;padding:32px 20px}
+    .reachbar .stat:nth-child(2){border-right:0}
+    .reachbar .v{font-size:var(--text-3xl)}
+    .audience{padding:56px 20px}
+    .statgrid{grid-template-columns:1fr 1fr;gap:14px}
+    .lineup{padding:56px 0 0}
+    .lineup .head{padding:0 20px 32px}
+    .band{min-height:420px}
+    .band .in{padding:44px 20px}
+    .band h3{font-size:var(--text-4xl)}
+    .contact{padding:56px 20px}
+    .formcard{padding:22px 18px}
+    .fgrid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<!-- header -->
+<header class="site" id="sitehead">
+  <a class="brand" href="#top"><img src="assets/logos/nsp-logo-full.png" alt="Negative Split Productions"><span class="lbl">Sponsorship</span></a>
+  <nav class="site">
+    <a class="navlink" href="#events">Events</a>
+    <a class="navlink" href="#audience">Audience</a>
+    <a class="navlink" href="#contact">Contact</a>
+    <a class="navlink siteurl" href="https://mynegativesplit.com" target="_blank" rel="noopener">mynegativesplit.com</a>
+    <a class="btn btn-primary btn-sm" href="#contact">Become a Sponsor</a>
+  </nav>
+  <button class="menubtn" id="menuBtn" aria-label="Menu" aria-expanded="false" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</header>
+
+<!-- hero -->
+<div class="hero" id="top">
+  <div class="hero-stage">
+    <div class="kb kb-a" style="background-image:url(assets/photos/hero-aerial.jpg);background-position:center 46%"></div>
+    <div class="kb kb-b" style="background-image:url(assets/photos/hero-resrun-1.jpg);background-position:center 40%"></div>
+    <div class="kb kb-a" style="background-image:url(assets/photos/hero-kidstri-1.jpg);background-position:center 38%"></div>
+    <div class="kb kb-b" style="background-image:url(assets/photos/hero-fourthfest-1.jpg);background-position:center 42%"></div>
+    <div class="kb kb-a" style="background-image:url(assets/photos/hero-resrun-2.jpg);background-position:center 42%"></div>
+    <div class="kb kb-b" style="background-image:url(assets/photos/hero-kidstri-2.jpg);background-position:center 52%"></div>
+    <div class="kb kb-a" style="background-image:url(assets/photos/hero-fourthfest-2.jpg);background-position:center 42%"></div>
+    <div class="kb kb-b" style="background-image:url(assets/photos/hero-resrun-3.jpg);background-position:center 40%"></div>
+    <div class="kb kb-a" style="background-image:url(assets/photos/hero-kidstri-3.jpg);background-position:center 32%"></div>
+    <div class="kb kb-b" style="background-image:url(assets/photos/hero-fourthfest-3.jpg);background-position:center 48%"></div>
+    <div class="kb kb-a" style="background-image:url(assets/photos/hero-kidstri-4.jpg);background-position:center 38%"></div>
+    <div class="kb kb-b" style="background-image:url(assets/photos/hero-fourthfest-4.jpg);background-position:center 45%"></div>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="hero-inner">
+    <div class="hero-card">
+      <h1>Your brand, in the moment they'll never forget.</h1>
+      <p>We own and produce some of Houston's favorite endurance events, start to finish. Sponsor the finish line and reach thousands of active, loyal, local people.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary btn-lg" href="#contact">Talk to our team</a>
+        <a class="btn btn-glass-dark btn-lg" href="#events">Explore events</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- reach bar -->
+<div class="reachbar">
+  <div class="in">
+    <div class="stat"><div class="v">3,650</div><div class="l">Participants a year</div></div>
+    <div class="stat"><div class="v">17K+</div><div class="l">On-site each year</div></div>
+    <div class="stat"><div class="v">300+</div><div class="l">Houston ZIPs reached</div></div>
+    <div class="stat"><div class="v">3</div><div class="l">Events, three seasons</div></div>
+  </div>
+</div>
+
+<!-- audience -->
+<div class="audience" id="audience">
+  <div class="in">
+    <div>
+      <span class="eyebrow line">Who you reach</span>
+      <h2>A loyal, active audience across a full Houston season.</h2>
+      <p>Runners, families, and spectators who train for months and celebrate for weeks. Your brand shows up in the photos, the stories, and the finish-line memories.</p>
+      <div style="margin-top:26px"><a class="btn btn-secondary btn-md" href="#contact">Request the sponsorship kit</a></div>
+    </div>
+    <div class="statgrid">
+      <div class="statcard"><div class="sc-top"><span class="sc-val">90</span><span class="sc-unit">%</span></div><div class="sc-bot"><span class="sc-label">Houston metro</span></div></div>
+      <div class="statcard"><div class="sc-top"><span class="sc-val">57</span><span class="sc-unit">%</span></div><div class="sc-bot"><span class="sc-label">Return families (Kids Tri)</span></div></div>
+      <div class="statcard"><div class="sc-top"><span class="sc-val">33–38</span></div><div class="sc-bot"><span class="sc-label">Adult median age</span></div></div>
+      <div class="statcard"><div class="sc-top"><span class="sc-val">40</span><span class="sc-unit">%</span></div><div class="sc-bot"><span class="sc-label">Fourth Fest 2-yr growth</span><span class="sc-trend">+↑</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- event lineup -->
+<div class="lineup" id="events">
+  <div class="head">
+    <span class="eyebrow on-dark line">The event lineup</span>
+    <h2>Three distinct crowds. All owned and produced by one team.</h2>
+  </div>
+
+  <!-- Resolution Run -->
+  <section class="band">
+    <div class="photo" style="background-image:url(assets/photos/band-resrun.jpg);background-position:center 30%"></div>
+    <div class="scrim"></div>
+    <div class="topbar" style="background:var(--grad-resrun)"></div>
+    <div class="in"><div class="col">
+      <h3 style="background:var(--grad-resrun);-webkit-background-clip:text;background-clip:text">Houston Resolution Run</h3>
+      <p class="tag">New Year's morning downtown. Thousands of runners start the year chasing a personal best.</p>
+      <div class="chips"><div class="chip"><span>20K · 10K · 5K</span></div><div class="chip"><span>January 1</span></div><div class="chip"><span>Downtown Houston</span></div></div>
+      <div class="bandstats">
+        <div class="bandstat"><div class="v">~2,750</div><div class="l">On-site</div></div>
+        <div class="bandstat"><div class="v">91%</div><div class="l">Houston metro</div></div>
+        <div class="bandstat"><div class="v">26%</div><div class="l">Return runners</div></div>
+      </div>
+      <a class="bandbtn" style="background:var(--grad-resrun)" href="https://sponsor.mynegativesplit.com/houston-resolution-run">View sponsorship details <span class="arw">&rarr;</span></a>
+    </div></div>
+  </section>
+
+  <!-- Kids Tri -->
+  <section class="band">
+    <div class="photo" style="background-image:url(assets/photos/band-kidstri.jpg);background-position:center 40%"></div>
+    <div class="scrim"></div>
+    <div class="topbar" style="background:var(--grad-kidstri)"></div>
+    <div class="in"><div class="col">
+      <h3 style="background:var(--grad-kidstri);-webkit-background-clip:text;background-clip:text">Houston Kids Tri</h3>
+      <p class="tag">Swim, bike, run. Families spend the whole morning on site cheering their first finish.</p>
+      <div class="chips"><div class="chip"><span>Swim · Bike · Run</span></div><div class="chip"><span>Ages 6–17</span></div><div class="chip"><span>Katy, TX</span></div></div>
+      <div class="bandstats">
+        <div class="bandstat"><div class="v">~10,000</div><div class="l">On-site</div></div>
+        <div class="bandstat"><div class="v">1,661</div><div class="l">Young athletes</div></div>
+        <div class="bandstat"><div class="v">57%</div><div class="l">Return families</div></div>
+      </div>
+      <a class="bandbtn" style="background:var(--grad-kidstri)" href="#contact">Ask about Kids Tri sponsorship <span class="arw">&rarr;</span></a>
+    </div></div>
+  </section>
+
+  <!-- Fourth Fest -->
+  <section class="band">
+    <div class="photo" style="background-image:url(assets/photos/band-fourthfest.jpg);background-position:center 55%"></div>
+    <div class="scrim"></div>
+    <div class="topbar" style="background:var(--grad-fourthfest)"></div>
+    <div class="in"><div class="col">
+      <h3 style="background:var(--grad-fourthfest);-webkit-background-clip:text;background-clip:text">Houston Fourth Fest</h3>
+      <p class="tag">A patriotic road race wrapped in a street festival. A beer mile and Houston's loudest Fourth of July crowd.</p>
+      <div class="chips"><div class="chip"><span>Road Race</span></div><div class="chip"><span>Beer Mile</span></div><div class="chip"><span>Festival</span></div></div>
+      <div class="bandstats">
+        <div class="bandstat"><div class="v">~4,500</div><div class="l">On-site</div></div>
+        <div class="bandstat"><div class="v">1,278</div><div class="l">Runners</div></div>
+        <div class="bandstat"><div class="v">+40%</div><div class="l">2-yr growth</div></div>
+      </div>
+      <a class="bandbtn" style="background:var(--grad-fourthfest)" href="#contact">Ask about Fourth Fest sponsorship <span class="arw">&rarr;</span></a>
+    </div></div>
+  </section>
+</div>
+
+<!-- contact -->
+<div class="contact" id="contact">
+  <div class="streaks"></div>
+  <div class="head">
+    <span class="eyebrow on-dark">Let's talk</span>
+    <h2>Sponsor the finish line.</h2>
+    <p class="sub">Tell us about your brand and we'll follow up with the full sponsorship kit: reach, packages, and event dates.</p>
+  </div>
+  <div class="formcard">
+    <form id="inqForm" novalidate>
+      <div class="fgrid">
+        <label class="fld"><span>First name *</span><input name="first_name" required autocomplete="given-name"></label>
+        <label class="fld"><span>Last name *</span><input name="last_name" required autocomplete="family-name"></label>
+        <label class="fld"><span>Company / brand *</span><input name="organization" required autocomplete="organization"></label>
+        <label class="fld"><span>Work email *</span><input name="email" type="email" required autocomplete="email"></label>
+        <label class="fld"><span>Phone</span><input name="phone" type="tel" autocomplete="tel"></label>
+        <label class="fld"><span>Website</span><input name="website" autocomplete="url"></label>
+        <label class="fld wide"><span>Industry / category</span><input name="category" placeholder="gym, bank, nutrition, beverage..."></label>
+        <label class="fld wide"><span>Events of interest</span>
+          <select name="interest">
+            <option value="">Not sure yet, help me choose</option>
+            <option value="annual">The full season (all three events)</option>
+            <option value="resrun">Houston Resolution Run</option>
+            <option value="kidstri">Houston Kids Tri</option>
+            <option value="fourthfest">Houston Fourth Fest</option>
+          </select>
+        </label>
+        <label class="fld wide fld-check">
+          <input type="checkbox" name="krbe_interest" value="yes">
+          <span>I'm also interested in additional marketing opportunities through NSP's media partner, 104.1 KRBE.</span>
+        </label>
+        <label class="fld wide"><span>Your goals, questions, or budget</span><textarea name="message" rows="4" placeholder="Share your goals, any budget you have in mind, and any questions."></textarea></label>
+      </div>
+      <input type="text" name="company_fax" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="formfoot">
+        <button type="submit" class="btn btn-primary btn-lg submitbtn" id="inqSubmit">Send inquiry</button>
+        <span class="formnote">We almost always respond within 24 hours.</span>
+      </div>
+    </form>
+    <div class="formmsg ok" id="formOk" hidden>Thanks, your inquiry is in. We'll be in touch, almost always within 24 hours.</div>
+    <div class="formmsg err" id="formErr" hidden>Something went wrong sending that. Please email <a href="mailto:tony@mynegativesplit.com">tony@mynegativesplit.com</a> and we'll take care of you.</div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="site">
+  <img src="assets/logos/nsp-icon.png" alt="Negative Split Productions">
+  <div>Houston Resolution Run, Houston Kids Tri, and Houston Fourth Fest are owned and produced by Negative Split Productions.</div>
+  <div style="margin-top:6px">&copy; Negative Split Productions LLC. &middot; <a href="https://mynegativesplit.com">mynegativesplit.com</a></div>
+</footer>
+
+<script>
+  // mobile menu
+  function toggleMenu(){
+    var h=document.getElementById('sitehead');
+    var open=h.classList.toggle('menu-open');
+    document.getElementById('menuBtn').setAttribute('aria-expanded', open);
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('nav.site a'), function(a){
+    a.addEventListener('click', function(){
+      document.getElementById('sitehead').classList.remove('menu-open');
+      document.getElementById('menuBtn').setAttribute('aria-expanded','false');
+    });
+  });
+
+  // shrink the header logo on scroll
+  var sh=document.getElementById('sitehead');
+  window.addEventListener('scroll', function(){ if(sh) sh.classList.toggle('shrunk', window.scrollY>40); }, {passive:true});
+
+  // sponsorship inquiry form -> Corral endpoint
+  var FORM_ENDPOINT = "https://app.corralapp.co/api/sponsorship-inquiry";
+  var EVENT_NAME = { resrun:"Houston Resolution Run", kidstri:"Houston Kids Tri", fourthfest:"Houston Fourth Fest" };
+  var inq = document.getElementById('inqForm');
+  if(inq){
+    inq.addEventListener('submit', function(e){
+      e.preventDefault();
+      var ok=document.getElementById('formOk'), err=document.getElementById('formErr'), btn=document.getElementById('inqSubmit');
+      ok.hidden=true; err.hidden=true;
+      if(inq.company_fax.value){ inq.style.display='none'; ok.hidden=false; return; } // honeypot: fake success
+      var choice = inq.interest.value;
+      var data={
+        first_name: inq.first_name.value.trim(), last_name: inq.last_name.value.trim(),
+        organization: inq.organization.value.trim(),
+        email: inq.email.value.trim(), phone: inq.phone.value.trim(), website: inq.website.value.trim(),
+        category: inq.category.value.trim(), interest: inq.interest.value,
+        krbe_interest: inq.krbe_interest.checked, message: inq.message.value.trim(),
+        event: EVENT_NAME[choice] || 'NSP Sponsorship Program', source: 'sponsorship'
+      };
+      if(!data.first_name || !data.last_name || !data.organization || data.email.indexOf('@')<1){ err.hidden=false; return; }
+      btn.disabled=true; btn.textContent='Sending...';
+      fetch(FORM_ENDPOINT, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)})
+        .then(function(r){ if(!r.ok) throw new Error(); inq.style.display='none'; ok.hidden=false; })
+        .catch(function(){ err.hidden=false; })
+        .finally(function(){ btn.disabled=false; btn.textContent='Send inquiry'; });
+    });
+  }
+</script>
+</body>
+</html>
