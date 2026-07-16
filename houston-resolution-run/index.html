@@ -276,6 +276,13 @@
   .matrixwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
   /* on desktop the matrix fits, so drop the scroll container -> the sticky header row can stick to the page */
   @media (min-width:941px){.matrixwrap{overflow:visible}}
+  /* on mobile/tablet the matrix is wider than the screen. a horizontal scroll container
+     traps position:sticky, so instead make it a capped scrollable panel (both axes):
+     the header row then pins to the panel top while you scroll rows or swipe across tiers. */
+  @media (max-width:940px){
+    .matrixwrap{max-height:76vh;overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:auto}
+    .matrix thead th{top:0}
+  }
 
   /* ============ PRINT / LIGHT THEME ============ */
   body.print-mode{
